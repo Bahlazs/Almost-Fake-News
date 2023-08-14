@@ -1,6 +1,6 @@
 package Bahlazs.afnBackend.models;
 
-import Bahlazs.afnBackend.enums.NewsType;
+
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -15,30 +15,17 @@ public class News {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "NEWS_ID", nullable = false)
     private Long id;
+    private String title;
     private String newsHeader;
     private String newsBody;
-    private Date newsDate;
+    private String newsDate;
 
 
-    public News(String newsHeader, String newsBody, Date newsDate, NewsType type) {
+    public News(String title, String newsHeader, String newsBody, String newsDate) {
+        this.title = title;
         this.newsHeader = newsHeader;
         this.newsBody = newsBody;
         this.newsDate = newsDate;
-
     }
-
-
-    public String getNewsHeader() {
-        return newsHeader;
-    }
-
-    public String getNewsBody() {
-        return newsBody;
-    }
-
-    public Date getNewsDate() {
-        return newsDate;
-    }
-
 
 }
