@@ -1,8 +1,7 @@
 import {useState, useEffect} from 'react'
-import './styleSheet.css'
 import NavBar from "./components/NavBar.jsx";
 import NewsGrid from "./components/NewsGrid.jsx";
-import WelcomeMessage from "./components/WelcomeMessage.jsx";
+import Home from "./components/Home.jsx";
 
 function App() {
     const [newsList, setNewsList] = useState([])
@@ -21,7 +20,7 @@ function App() {
     return (
         <>
             <NavBar/>
-            <WelcomeMessage/>
+            <Home/>
             <NewsGrid newsList={newsList}/>
         </>
     )

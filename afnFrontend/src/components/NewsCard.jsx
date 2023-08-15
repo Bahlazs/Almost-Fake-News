@@ -1,3 +1,5 @@
+import './stylesheets/NewsCard.css'
+
 const NewsCard = (article) => {
     return (
         <div className="news-card">

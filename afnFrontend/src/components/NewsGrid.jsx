@@ -1,4 +1,5 @@
 import NewsCard from "./NewsCard.jsx";
+import './stylesheets/NewsGrid.css'
 
 
 const NewsGrid = ({newsList}) => {

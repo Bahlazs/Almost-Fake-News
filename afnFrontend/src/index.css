@@ -1,0 +1,33 @@
+:root {
+  --background-color: rgba(0, 0, 9, 0.25);
+  --navbar-color: black;
+  --navbar-text-color: white;
+  --sub-button-color:white;
+  --sub_button-text-color:black;
+  --hover-text-color: rgba(0, 0, 0, 9);
+  --overlay: rgba(0,0,0,.7);
+  --home-img-url: 'E:\projects\Almost-Fake-News\afnFrontend\src\assets\bg-img.jpg'
+}
+
+body {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
