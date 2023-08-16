@@ -1,5 +1,6 @@
 :root {
-  --background-color: rgba(0, 0, 9, 0.25);
+  --home-background-color: rgba(0, 0, 9, 0.25);
+  --body-background-color: #919192;
   --navbar-color: black;
   --navbar-text-color: white;
   --sub-button-color:white;
@@ -13,6 +14,7 @@ body {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.2;
+  background-color: var(--body-background-color);
 }
 
 * {

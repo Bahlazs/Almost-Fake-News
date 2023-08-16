@@ -14,6 +14,7 @@ function App() {
     useEffect(() => {
         getNews().then((news) => {
             setNewsList(news)
+            console.log(newsList)
         })
     }, [])
 

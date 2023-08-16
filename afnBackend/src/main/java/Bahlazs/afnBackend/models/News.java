@@ -3,12 +3,14 @@ package Bahlazs.afnBackend.models;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 @Entity
 @NoArgsConstructor
 @EqualsAndHashCode
+@Getter
 public class News {
 
     @Id

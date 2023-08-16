@@ -4,6 +4,9 @@ import Bahlazs.afnBackend.DTOs.NewsAddRequest;
 import Bahlazs.afnBackend.models.News;
 import Bahlazs.afnBackend.services.NewService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,10 +34,7 @@ public class NewsController {
         ResponseEntity<Void> response;
         if (request.getTitle() != null && request.getHead() != null && request.getBody() != null){
             LocalDateTime currentDateTime = LocalDateTime.now();
-            News newNews = new News(request.getTitle(),
-                                    request.getHead(),
-                                    request.getBody(),
-                                    newService.getCurrentDateAndTimeInString(currentDateTime));
+           News newNews = newService.createNews(request.getTitle(), request.getHead(), request.getBody());
             newService.saveNews(newNews);
             response = ResponseEntity.ok().build();
         }else {
@@ -48,7 +48,7 @@ public class NewsController {
         ResponseEntity<List<News>> response;
         List<News> allNews = newService.getAllNews();
         if (!allNews.isEmpty()) {
-            response = ResponseEntity.ok().body(allNews);
+            response = new ResponseEntity<>(allNews, HttpStatus.OK);
         }else {
             response = ResponseEntity.status(400).body(null);
         }

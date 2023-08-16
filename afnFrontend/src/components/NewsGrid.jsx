@@ -13,9 +13,9 @@ const NewsGrid = ({newsList}) => {
 
     return(
         <div id="news-grid" className="news-grid">
-            {newsList.map((news, i) => {
-                <NewsCard key={i} article={news}/>
-            })}
+            {newsList.map((news) => (
+                <NewsCard article={news}/>
+            ))}
         </div>
     )
 }
