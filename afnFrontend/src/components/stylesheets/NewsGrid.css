@@ -1,10 +1,61 @@
 .loading {
     display: flex;
-    height:100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .news-grid {
     display: grid;
+    gap: 1rem;
+    margin: 1rem;
+    grid-template-areas:
+            'marticle marticle marticle one'
+            'marticle marticle marticle two'
+            'marticle marticle marticle three'
+            '  four     five      six   seven';
 }
+
+.main-article {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    grid-area: marticle;
+    border: solid var(--card-border-color);
+    background-color: var(--card-background-color);
+}
+
+.mat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50%;
+    background-image: url('../../assets/main-article-pic.png');
+    color: white;
+
+}
+
+.main-article-title {
+    padding: 1rem;
+}
+
+.main-article-header,
+.main-article-body,
+.main-article-date {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main-article-date {
+    margin-top: auto;
+    padding-bottom: 1rem;
+}
+
+.news-grid:nth-child(1){grid-area: one}
+.news-grid:nth-child(2){grid-area: two}
+.news-grid:nth-child(3){grid-area: three}
+.news-grid:nth-child(4){grid-area: four}
+.news-grid:nth-child(5){grid-area: five}
+.news-grid:nth-child(6){grid-area: six}
+.news-grid:nth-child(7){grid-area: seven}

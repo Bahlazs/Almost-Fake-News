@@ -7,7 +7,9 @@
   --sub_button-text-color:black;
   --hover-text-color: rgba(0, 0, 0, 9);
   --overlay: rgba(0,0,0,.7);
-  --home-img-url: 'E:\projects\Almost-Fake-News\afnFrontend\src\assets\bg-img.jpg'
+  --card-background-color: aliceblue;
+  --card-border-color: black;
+
 }
 
 body {

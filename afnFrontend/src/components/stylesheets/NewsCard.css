@@ -1,0 +1,29 @@
+.news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--card-background-color);
+    border: solid;
+    border-color: var(--card-border-color);
+}
+
+.nt-container {
+    color: white;
+    background-color: #031752;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+
+.news-head {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.news-date {
+    margin-top: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
