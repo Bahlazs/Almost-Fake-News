@@ -18,7 +18,9 @@ public class News {
     @Column(name = "NEWS_ID", nullable = false)
     private Long id;
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String newsHeader;
+    @Column(columnDefinition = "TEXT")
     private String newsBody;
     private String newsDate;
 
