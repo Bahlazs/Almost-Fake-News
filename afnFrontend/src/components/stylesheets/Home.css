@@ -31,6 +31,13 @@
     padding: 3rem;
 }
 
+.greetings {
+    font-family: Arial;
+    font-style: oblique;
+    font-size: 4rem;
+    color: var(--greetings-color);
+}
+
 .sub-button {
     padding: 17px 28px;
     font-size: 1.2rem;

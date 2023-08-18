@@ -1,6 +1,7 @@
 :root {
   --home-background-color: rgba(0, 0, 9, 0.25);
   --body-background-color: rgba(0, 0, 9, 0.78);
+  --greetings-color: #fd7a1e;
   --navbar-color: black;
   --navbar-text-color: white;
   --sub-button-color:white;
@@ -13,6 +14,7 @@
   --card-text-color: aliceblue;
   --article-line-color: white;
   --footer-background-color: #fd7a1e;
+  --footer-item-color: #343434;
 
 }
 
