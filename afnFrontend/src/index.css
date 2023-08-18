@@ -1,14 +1,18 @@
 :root {
   --home-background-color: rgba(0, 0, 9, 0.25);
-  --body-background-color: #919192;
+  --body-background-color: rgba(0, 0, 9, 0.78);
   --navbar-color: black;
   --navbar-text-color: white;
   --sub-button-color:white;
-  --sub_button-text-color:black;
+  --sub-button-text-color:black;
+  --button-hover-color: #fd7a1e;
   --hover-text-color: rgba(0, 0, 0, 9);
   --overlay: rgba(0,0,0,.7);
   --card-background-color: aliceblue;
   --card-border-color: black;
+  --card-text-color: aliceblue;
+  --article-line-color: white;
+  --footer-background-color: #fd7a1e;
 
 }
 

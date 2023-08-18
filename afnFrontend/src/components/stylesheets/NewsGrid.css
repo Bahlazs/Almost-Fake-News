@@ -7,13 +7,15 @@
 
 .news-grid {
     display: grid;
+    width: 100%;
     gap: 1rem;
-    margin: 1rem;
+    padding: 1rem;
+    grid-template-columns: auto;
     grid-template-areas:
-            'marticle marticle marticle one'
-            'marticle marticle marticle two'
-            'marticle marticle marticle three'
-            '  four     five      six   seven';
+            "marticle marticle marticle one"
+            "marticle marticle marticle two"
+            "marticle marticle marticle three"
+            "four five six seven";
 }
 
 .main-article {
@@ -21,23 +23,32 @@
     gap: 1.5rem;
     flex-direction: column;
     grid-area: marticle;
-    border: solid var(--card-border-color);
-    background-color: var(--card-background-color);
+    color: var(--card-text-color);
 }
 
-.mat-container {
-    display: flex;
-    flex-direction: column;
+
+.img-container {
     justify-content: flex-end;
     width: 100%;
     height: 50%;
-    background-image: url('../../assets/main-article-pic.png');
-    color: white;
+    padding:1rem;
+    background: url('../../assets/main-article-pic.png')
+                    no-repeat center center/cover ;
+    backdrop-filter: saturate(0%);
+
 
 }
 
 .main-article-title {
     padding: 1rem;
+}
+
+.article-line {
+    height: 3px;;
+    margin-left:1rem;
+    margin-right: 1rem;
+    background-color: var(--article-line-color);
+    border-radius: 10px;
 }
 
 .main-article-header,
@@ -52,10 +63,56 @@
     padding-bottom: 1rem;
 }
 
-.news-grid:nth-child(1){grid-area: one}
-.news-grid:nth-child(2){grid-area: two}
-.news-grid:nth-child(3){grid-area: three}
-.news-grid:nth-child(4){grid-area: four}
-.news-grid:nth-child(5){grid-area: five}
-.news-grid:nth-child(6){grid-area: six}
-.news-grid:nth-child(7){grid-area: seven}
+
+@media (max-width: 1000px) {
+    .news-grid {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "marticle marticle marticle"
+            "marticle marticle marticle"
+            "one one one"
+            "two three four"
+            "five six seven";
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .news-grid {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "marticle marticle"
+            "marticle marticle "
+            "one one"
+            "two three"
+            "four five"
+            "six seven";
+    }
+}
+
+@media (max-width: 400px) {
+    .news-grid {
+        grid-template-columns: auto;
+        grid-template-areas:
+            "marticle"
+            "marticle"
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven";
+    }
+}
+
+.th-1 {grid-area: one;}
+.th-2 {grid-area: two;}
+.th-3 {grid-area: three;}
+.th-4 {grid-area: four;}
+.th-5 {grid-area: five;}
+.th-6 {grid-area: six;}
+.th-7 {grid-area: seven;}
+
+
+

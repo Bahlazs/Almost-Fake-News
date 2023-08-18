@@ -2,18 +2,15 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background-color: var(--card-background-color);
-    border: solid;
-    border-color: var(--card-border-color);
+    color: white;
+
+
 }
 
 .nt-container {
-    color: white;
-    background-color: #031752;
     width: 100%;
     padding: 1rem;
 }
-
 
 
 .news-head {

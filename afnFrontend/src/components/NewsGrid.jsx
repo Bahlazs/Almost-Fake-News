@@ -5,6 +5,7 @@ import './stylesheets/NewsGrid.css'
 
 const NewsGrid = ({newsList}) => {
     let mainNews
+    let restOfTheNews
 
 
     if (newsList.length === 0) {
@@ -15,20 +16,23 @@ const NewsGrid = ({newsList}) => {
         )
 
     } else {
-        mainNews = newsList.splice(0, 1)[0]
+        mainNews = newsList[0]
+        restOfTheNews = newsList.slice(1, 8)
+
         console.log(mainNews)
         return (
             <div id="news-grid" className="news-grid">
                 <div className="main-article">
-                    <div className="mat-container">
-                        <h2 className="main-article-title">{mainNews.title}</h2>
-                    </div>
+                    <div className="img-container"></div>
+                    <h2 className="main-article-title">{mainNews.title}</h2>
+                    <div className="article-line"></div>
                     <h3 className="main-article-header">{mainNews.newsHeader}</h3>
                     <p className="main-article-body">{mainNews.newsBody}</p>
                     <p className="main-article-date">{mainNews.newsDate}</p>
+                    <div className="article-line"></div>
                 </div>
-                {newsList.map((news) => (
-                    <NewsCard article={news}/>
+                {restOfTheNews.map((news, i) => (
+                    <NewsCard article={news} id={" th-"+(i+1)} key={i}/>
                 ))}
             </div>
         )
