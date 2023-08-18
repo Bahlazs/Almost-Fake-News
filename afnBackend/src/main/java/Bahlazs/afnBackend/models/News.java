@@ -3,12 +3,14 @@ package Bahlazs.afnBackend.models;
 
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 @Entity
 @NoArgsConstructor
 @EqualsAndHashCode
+@Getter
 public class News {
 
     @Id
@@ -16,7 +18,9 @@ public class News {
     @Column(name = "NEWS_ID", nullable = false)
     private Long id;
     private String title;
+    @Column(columnDefinition = "TEXT")
     private String newsHeader;
+    @Column(columnDefinition = "TEXT")
     private String newsBody;
     private String newsDate;
 

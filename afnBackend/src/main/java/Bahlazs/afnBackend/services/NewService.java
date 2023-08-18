@@ -23,6 +23,15 @@ public class NewService {
 
     public void saveNews(News news) {newsRepository.save(news);}
 
+    public News createNews(String newsTitle, String newsHead, String newsBody) {
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        News newNews = new News(newsTitle,
+                newsHead,
+                newsBody,
+                getCurrentDateAndTimeInString(currentDateTime));
+        return newNews;
+    }
+
     public String getCurrentDateAndTimeInString(LocalDateTime currentDateTime) {
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         String formatedDateTime = currentDateTime.format(dateFormatter);
