@@ -33,7 +33,6 @@ public class NewsController {
     public ResponseEntity<Void> addNews(@RequestBody NewsAddRequest request) {
         ResponseEntity<Void> response;
         if (request.getTitle() != null && request.getHead() != null && request.getBody() != null){
-            LocalDateTime currentDateTime = LocalDateTime.now();
            News newNews = newService.createNews(request.getTitle(), request.getHead(), request.getBody());
             newService.saveNews(newNews);
             response = ResponseEntity.ok().build();
