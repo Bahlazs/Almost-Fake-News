@@ -1,3 +1,4 @@
+
 # Almost Fake News
 
 ## Table of contents
@@ -83,3 +84,4 @@ pw: ****
 - Admin role
 - News types
 - News relevance system
+
