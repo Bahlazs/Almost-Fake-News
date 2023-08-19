@@ -1,4 +1,5 @@
 import NewsCard from "./NewsCard.jsx";
+import PropTypes from "prop-types";
 import './stylesheets/NewsGrid.css'
 
 
@@ -32,12 +33,24 @@ const NewsGrid = ({newsList}) => {
                     <div className="article-line"></div>
                 </div>
                 {restOfTheNews.map((news, i) => (
-                    <NewsCard article={news} id={" th-"+(i+1)} key={i}/>
+                    <NewsCard article={news} id={" _"+(i+1)} key={i}/>
                 ))}
             </div>
         )
     }
 
+
+}
+
+NewsGrid.propTypes = {
+    newsList: PropTypes.arrayOf(
+        PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            newsHeader: PropTypes.string.isRequired,
+            newsBody: PropTypes.string.isRequired,
+            newsDate: PropTypes.string.isRequired,
+        })
+    ).isRequired,
 
 }
 

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import './stylesheets/NewsCard.css'
 
 const NewsCard = ({article, id}) => {
@@ -13,4 +14,15 @@ const NewsCard = ({article, id}) => {
         </div>
     )
 }
+
+NewsCard.propTypes = {
+    article: PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        newsHeader: PropTypes.string.isRequired,
+        newsBody: PropTypes.string.isRequired,
+        newsDate: PropTypes.string.isRequired,
+    }),
+    id: PropTypes.string
+}
+
 export default NewsCard

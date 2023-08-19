@@ -106,13 +106,13 @@
     }
 }
 
-.th-1 {grid-area: one;}
-.th-2 {grid-area: two;}
-.th-3 {grid-area: three;}
-.th-4 {grid-area: four;}
-.th-5 {grid-area: five;}
-.th-6 {grid-area: six;}
-.th-7 {grid-area: seven;}
+._1 {grid-area: one;}
+._2 {grid-area: two;}
+._3 {grid-area: three;}
+._4 {grid-area: four;}
+._5 {grid-area: five;}
+._6 {grid-area: six;}
+._7 {grid-area: seven;}
 
 
 
