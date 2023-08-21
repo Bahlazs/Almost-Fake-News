@@ -77,7 +77,7 @@ http://localhost:5173/
 host: db.kydyvpgalddbpmmxxclr.supabase.co <br>
 user: postgres <br>
 database: postgres <br>
-pw: ****
+pw: Test_Pw-0218
 
 ### Future Plans
 - User role
