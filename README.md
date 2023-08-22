@@ -34,15 +34,28 @@ While i worked on it this project grew to me so i plan to expand it in the futur
 ## Setup guide
 
 First clone the project from my Github repository. After you cloned the project open the project folders with your IDE 
-of choice. I recommend to open the afnBackend and the afnFrontend folders separately. 
+of choice or if you dont have one open it in terminal. I recommend to open the afnBackend and the afnFrontend folders separately. 
 
 ### Backend
 
-Open the afnBackend folder in your IDE. The code editor should recognize the pom.xml and configure the running configurations.
+If you dnt have maven and OpenJDK on your computer first install OpenJDK after that you should install maven.
+If you ar not familiar with the process how to do this follow these guides:
+
+[OpedJDK install guide](https://openjdk.org/install/) <br>
+[Maven install guide](https://www.javatpoint.com/how-to-install-maven)
+
+
+After that open the afnBackend folder. If your IDE didn't configure the project or you opened the project in a terminal (cmd or powershell on windows) run the following command:
+
+This will compile your code and start your server
+```angular2html
+mvn spring-boot:run
+```
+
+
 After starting the sever it should automatically connect to the data base.
- 
 #### dependencies
-- Java 17
+- OpenJDK 17
 - Maven
 
 ### Frontend
@@ -52,7 +65,7 @@ so you should install it first. <br>
 
 If you are not familiar how to do this follow the guide in the following link:
 
-[Link to mvn installation guide](https://www.freecodecamp.org/news/nvm-for-windows-how-to-download-and-install-node-version-manager-in-windows-10/)
+[Link to node version manager installation guide](https://www.freecodecamp.org/news/nvm-for-windows-how-to-download-and-install-node-version-manager-in-windows-10/)
 
 After that open a terminal in your IDE and run the command bellow.
 
