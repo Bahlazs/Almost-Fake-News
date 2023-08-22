@@ -82,7 +82,7 @@ You can check out the site on the link bellow:
 
 http://localhost:5173/
 
-If you run into any probleams contact me on nick.balazs18@gmial.com
+If you run into any problems contact me on nick.balazs18@gmial.com
 
 #### dependencies
 - nvm 
