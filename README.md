@@ -54,7 +54,7 @@ mvn spring-boot:run
 
 
 After starting the sever it should automatically connect to the data base.
-#### dependencies
+#### Dependencies
 - OpenJDK 17
 - Maven
 
@@ -82,9 +82,8 @@ You can check out the site on the link bellow:
 
 http://localhost:5173/
 
-If you run into any problems contact me on nick.balazs18@gmial.com
 
-#### dependencies
+#### Dependencies
 - nvm 
 - npm 
 
@@ -100,3 +99,4 @@ pw: Test_Pw-0218
 - News types
 - News relevance system
 
+If you run into any problems contact me on nick.balazs18@gmial.com
